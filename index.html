@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
+  </head>
+  <body>
+ 
+<form class="box">
+  <center>
+    <lottie-player src="https://assets2.lottiefiles.com/datafiles/bzaUVj3XQpz2oA9/data.json"  background="transparent"  speed="1"  style="width: 200px; height: 150px;"  loop  autoplay></lottie-player>
+  </center>
+  <h1>Login</h1>
+  <input type="text" name="user" placeholder="User-Id">
+  <input type="password" name="pass" placeholder="Secret-word">
+  <input type="button" onclick="check(this.form)" value="Check">
+</form>
+ <script language="javascript">
+		function check(form)
+		{
+			if(form.user.value=="admin"&&form.pass.value=="123456")
+			{
+				window.open("file:///C:/Users/HP/Desktop/Work/index.htm");
+			}
+			else if(form.user.value=="icode"&&form.pass.value=="123456")
+			{
+				window.open("https://sites.google.com/view/i-code19");
+			}
+      else if(form.user.value=="dripon"&&form.pass.value=="123456"){
+        window.open("http://drip-on.epizy.com/");
+      }
+			else
+			{
+				window.alert("The Id and Password is wrong!!!!")
+			}
+		}
+	</script>
+ 
+  </body>
+</html>
